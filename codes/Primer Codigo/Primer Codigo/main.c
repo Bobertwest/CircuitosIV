@@ -5,14 +5,22 @@
  * Author : rober
  */ 
 
-#include <avr/io.h>
-
+#define F_CPU 1000000UL
+#include<avr/io.h>
+#include<util/delay.h>
 
 int main(void)
 {
     /* Replace with your application code */
+	DDRB = 0b00000011;
     while (1) 
     {
+		PORTB = 0b00000011;
+		_delay_ms(100);
+		PORTB = 0b00000000;
+		_delay_ms(100);
     }
 }
+
+
 
