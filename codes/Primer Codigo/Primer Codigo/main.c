@@ -16,9 +16,9 @@ int main(void)
     while (1) 
     {
 		PORTB = 0b00000011;
-		_delay_ms(100);
+		_delay_ms(2000);
 		PORTB = 0b00000000;
-		_delay_ms(100);
+		_delay_ms(2000);
     }
 }
 
